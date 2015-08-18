@@ -1,0 +1,26 @@
+/**
+ * Drag and Drop
+ */
+.dropzone {
+	position: relative;
+	background-color: rgba(255,255,255,0);
+	border: dashed 1px transparent;
+	transition: background-color 0.3s;
+}
+	.drop-active { border-color: $base; }
+	.drop-target { background-color: rgba( $white, .2 ); }
+	
+	.faded{ opacity: .15; }
+	.dragging{ 
+		position: relative;
+		z-index:20000;
+		opacity: 1; 
+	}
+		.dragging img{ transform: scale(.5); }
+
+	.drag-drop {
+	  -webkit-transform: translate(0px, 0px);
+			  transform: translate(0px, 0px);
+
+	  transition: background-color 0.3s;
+	}

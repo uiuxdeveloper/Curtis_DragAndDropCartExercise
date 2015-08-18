@@ -1,0 +1,33 @@
+/**
+ * Products
+ */
+.products{
+	width: 92%;
+	margin: 10% auto 0 auto;
+}
+	.product{
+		width: 23%;
+		margin: 2% 1% 10%;
+		float:left;
+		text-align: center;
+	}
+		.thmb, .thmb-img{
+			@include border-radius( 50% ); 
+		}
+			.thmb-img{
+				margin-bottom: 1.4em;
+				@include transition-property( transform );
+				@include transition-duration( 250ms );
+				@include transition-timing-function( linear );	
+			}
+
+	// Mobile Layout <= 640
+	@media screen and (max-width: 640px) {
+		.products{ margin-top: 15%; }
+			.product{ width: 100% }
+				.thmb{ 
+					width: 80%; 
+					margin: 0 auto;
+				}
+					.thmb-img{ margin-bottom: 1em; }
+	}

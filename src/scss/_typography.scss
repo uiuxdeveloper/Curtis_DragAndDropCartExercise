@@ -1,0 +1,49 @@
+/**
+ * Typography
+ */
+  body{ 
+    font-family: $font-family-1;
+    font-weight: normal;
+  }
+  h2, p{
+    margin: 0 2%;
+    padding: 0;
+  }
+    h2{ 
+      font-size: 1.8em;
+      font-weight: 300;
+      line-height: 1.8em;
+    }
+    p{ font-size: .8em; }
+
+  input{ 
+    text-align: center;
+    color: $black;
+    line-height: 1.6em;
+  }
+
+  a{ 
+    text-decoration: none;
+    color: $white; 
+  }
+    a:hover{ color: rgba($white, .7); }
+
+  // Utility Links
+  .util{ 
+    font-size:.71em;
+    font-weight: 800; 
+  }
+    .cart-total, .cart-subtotal{ 
+      font-size: .8em;
+      font-weight: 500;
+    }
+    .cart-items{ 
+      font-family: $font-family-2;
+      color: $black; 
+      font-size: .8em;
+      font-weight: bold;
+    }
+
+  // Product Details
+  .product-title, product-price{ font-size: 1.1em; }
+    .product-title{ line-height: 2.4em; }
