@@ -1,0 +1,10 @@
+{
+	"name":"Product 1",
+	"properties":
+	{
+		"id":1,
+		"title":"Product 1",
+		"price":29.99,
+		"description":"Lorem ipsum dolor sit amet"
+	}
+}

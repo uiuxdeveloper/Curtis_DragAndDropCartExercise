@@ -32,7 +32,6 @@ _designer-assets
 _dev_scope
 _processes
 node_modules
-build
 bower_components
 .tmp
 
