@@ -2,7 +2,7 @@
  * Products
  * @Author Curtis M. Janczak
  * @Version 0.1
- * @Namespace Products
+ * @Namespace PRODUCTS
  * @Param {Object} $
  * @Param {Object} window
  * @Param {Object} document
@@ -12,7 +12,7 @@
  	/**
  	 * Params
  	 * Private
- 	 * @Memberof CART
+ 	 * @Memberof PRODUCTS
  	 * @Param {Boolean} inited
  	 * @Param items
  	 * @Param subtotal
