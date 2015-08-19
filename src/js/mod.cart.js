@@ -6,7 +6,7 @@
  * @Param {Object} window
  * @Param {Object} document
  */
- var CART = ( function ( window, document ) {
+ var CART = ( function ( window, document, PRODUCTS ) {
 
  	/**
  	 * Params
@@ -121,12 +121,15 @@
 			//items = col[0];
 			//subtotal = col[1];
 
-			//if(console) console.log("Items in Cart: " + items);
-			//if(console) console.log("Subtotal of Cart: " + subtotal);
+			if(console) console.log("Items in Cart: " + items);
+			if(console) console.log("Subtotal of Cart: " + subtotal);
 			
 			// update DOM Here
 			document.getElementById( _options.itemsEleId ).innerHTML = items;
 			document.getElementById( _options.subtotalEleId ).value = "$" + subtotal.toFixed(2);
+
+			// reset default quantity input fields of products
+			PRODUCTS.updateProducts();
 		});
 	}
 
@@ -144,4 +147,4 @@
 		countItems: _countItems
 	};
 
-}( CART || window, document ));
+}( CART || window, document, PRODUCTS ));

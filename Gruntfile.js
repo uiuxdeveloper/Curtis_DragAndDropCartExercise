@@ -107,24 +107,6 @@ module.exports = function(grunt) {
 		},
 		
 		/**
-		 * Minfiy Images
-		 */
-		imagemin: {
-			options: {
-				optimizationLevel: 7, // 0 to 7
-				pngquant: true
-			},
-			build: {
-				files: [{
-					expand: true,
-					cwd: '<%= config.app %>/img',
-					src: ['{,*/}*.{jpg,png,gif}'],
-					dest: '<%= config.dist %>/img'
-				}]
-			}
-		},
-		
-		/**
 		 * Compile SASS
 		 */
 		compass: {
@@ -425,7 +407,6 @@ module.exports = function(grunt) {
 		'clean:build',					// clean the build directory
 		'useminPrepare',				// prepare usemin
 		'compass:build',				// build css from sass
-		'imagemin:build',				// minify images
 		'concat',						// needed for usemin default concat
 		'autoprefixer:build',			// add vendor prefixed styles
 		'uglify',						// needed for usemin to minify js
